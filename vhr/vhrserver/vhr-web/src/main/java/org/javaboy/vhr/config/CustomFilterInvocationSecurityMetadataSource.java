@@ -41,7 +41,7 @@ public class CustomFilterInvocationSecurityMetadataSource implements FilterInvoc
                 for (int i = 0; i < roles.size(); i++) {
                     str[i] = roles.get(i).getName();
                 }
-                return SecurityConfig.createList(str);
+                return SecurityConfig.createList(str);//角色集合
             }
         }
         return SecurityConfig.createList("ROLE_LOGIN");

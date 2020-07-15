@@ -34,6 +34,6 @@ public class LoginController {
         String text = code.getText();
         HttpSession session = request.getSession(true);
         session.setAttribute("verify_code", text);
-        VerificationCode.output(image,resp.getOutputStream());
+        VerificationCode.output(image, resp.getOutputStream());
     }
 }
